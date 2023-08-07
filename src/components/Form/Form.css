@@ -1,0 +1,117 @@
+.form-logo {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+
+    transform: translate(-50%,0%);
+}
+
+.form {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.form>div {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 4%;
+
+    width: 80%;
+}
+
+.form>div label {
+    font-size: 18px;
+    font-weight: 400;
+
+    margin-bottom: 5px;
+}
+
+.form>div input {
+    font-size: 16px;
+    font-weight: 100;
+
+    padding: 8px;
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    transition: border 0.2s;
+}
+
+.form>div input:hover,
+.form>div input:focus {
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.form>div button {
+    border: 1px solid black;
+    border-radius: 15px;
+
+    background-color: black;
+    color: white;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    width: 100%;
+
+    padding: 10px;
+
+    transition: all 0.2s;
+}
+
+.form>div button:hover {
+    background-color: white;
+    color: black;
+}
+
+.form-change-section {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
+    transform: translate(-50%,0%);
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+.form-change-section span {
+    cursor: pointer;
+}
+
+.form-change-section span::before {
+    content: '';
+    display: flex;
+
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 1px;
+}
+
+.img-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.img-avatar img {
+    width: 48px;
+    height: 48px;
+}
