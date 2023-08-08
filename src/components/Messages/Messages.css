@@ -1,0 +1,6 @@
+.messages-section {
+    width: 100%;
+    height: calc(90% - 70px);
+
+    overflow-y: scroll;
+}

@@ -1,0 +1,93 @@
+@keyframes animationIconHover {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-5%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    75% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.input-send__message {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+
+    overflow: hidden;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-send__message textarea {
+    height: 70%;
+
+    resize: none;
+
+    border: 1px solid transparent;
+    outline: none;
+
+    padding: 5px;
+
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+    margin-top: auto;
+
+    flex: 4;
+}
+
+.input-send__message div:nth-child(2),
+.input-send__message div:nth-child(3) {
+    flex: 1;
+}
+
+.input-send__message div img {
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+}
+
+.input-send__message div img:hover,
+.input-send__message div img:active {
+    animation: animationIconHover 0.2s ease-in-out forwards;
+}
+
+.input-send__message div button {
+    border: 1px solid #3288da;
+    border-radius: 15px;
+    color: #3288da;
+
+    width: 70px;
+
+    padding: 5px;
+
+    transition: all 0.2s;
+}
+
+.input-send__message div button:hover,
+.input-send__message div button:active {
+    background-color: #3288da;
+    color: white;
+}
+
+.input-send__message div,
+.input-send__message div label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

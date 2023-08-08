@@ -1,0 +1,25 @@
+.chat-section {
+    transition: all 0.2s;
+
+    width: 100%;
+
+    padding: 6px;
+
+    cursor: pointer;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.chat-section div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    margin-left: 10px;
+}
+
+.chat-section:hover,
+.chat-section:active {
+    background-color: #bed3e7;
+}

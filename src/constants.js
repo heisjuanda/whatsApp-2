@@ -10,7 +10,7 @@ export const REGISTER_FIELDS = [
         validation: {
             required: true,
             pattern: `^(?! )[a-zA-Z\s]{2,25}$`,
-            maxLength: 25,
+            maxLength: 20,
             minLength: 2,
         },
     },
@@ -80,7 +80,7 @@ export const LOGIN_FIELDS = [
     },
     {
         id: 'sendL',
-        text: 'Register',
+        text: 'Login',
         type: 'submit',
     },
 ];

@@ -1,4 +1,4 @@
-import { RoutesControl } from './components/Routes/Routes';
+import { RoutesControl } from './Routes/Routes';
 
 import './App.css'
 
