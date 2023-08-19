@@ -9,7 +9,7 @@ export const REGISTER_FIELDS = [
         placeHolder: 'Your name',
         validation: {
             required: true,
-            pattern: `^(?! )[a-zA-Z\s]{2,25}$`,
+            pattern: `^(?!\s)[A-Za-z\s]+$`,
             maxLength: 20,
             minLength: 2,
         },

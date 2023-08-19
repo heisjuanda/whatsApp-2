@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { onAuthStateChanged } from "firebase/auth";
 import { createContext, useLayoutEffect, useState } from "react";
 import { auth } from "../firebase";
@@ -22,4 +23,8 @@ export const AuthContextProvider = ({ childer }) => {
             {childer}
         </AuthContext.Provider>
     );
+};
+
+AuthContextProvider.propTypes = {
+    childer: PropTypes.func,
 };

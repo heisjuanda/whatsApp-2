@@ -26,7 +26,7 @@
     margin-top: 10px;
 }
 
-.search-section__container>div:last-child {
+.search-section__container>.userContainer {
     transition: all 0.2s;
 
     width: 100%;
@@ -36,7 +36,7 @@
     cursor: pointer;
 }
 
-.search-section__container>div:last-child div{
+.search-section__container>.userContainer div{
     display: flex;
     gap: 5px;
     align-items: center;
@@ -45,7 +45,19 @@
 }
 
 
-.search-section__container>div:last-child:hover,
-.search-section__container>div:last-child:active {
+.search-section__container>.userContainer div img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+.search-section__container>.userContainer:hover,
+.search-section__container>.userContainer:active {
     background-color: #bed3e7;
+}
+
+.error-container span{
+    color: rgba(255, 0, 0, 0.35);
 }

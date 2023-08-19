@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
@@ -9,10 +10,8 @@ import { Login } from "../components/Login/Login";
 export const RoutesControl = () => {
 
     const currentUser = useContext(AuthContext);
-    console.log(useContext(AuthContext))
 
     const ProtectedRoute = ({childer}) => {
-        console.log(currentUser)
         if (!currentUser) {
             return <Navigate to='/login' />
         }
@@ -28,4 +27,8 @@ export const RoutesControl = () => {
             </Routes>
         </Router>
     );
+};
+
+RoutesControl.propTypes = {
+    childer: PropTypes.func,
 };
